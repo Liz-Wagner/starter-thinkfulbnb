@@ -120,7 +120,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 100%;
 }
 
 form button {
@@ -148,31 +148,30 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 768px) {
   header {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-}
+  }
 
-header h1 {
-    margin: 14px 0;
-    padding-top: 0;
-}
+  header h1 {
+      margin: 14px 0;
+      padding-top: 0;
+  }
 
-header nav {
-    margin-top: 15px;
-}
+  header nav {
+      margin-top: 15px;
+  }
 
-header nav ul li a:hover {
-    color: #bdbdbd;
-}
+  header nav ul li a:hover {
+      color: #bdbdbd;
+  }
  
   form {
     display: flex;
     flex-direction: row;
     display: flex;
-    flex: 1;
     justify-content: space-between;
   }
 
@@ -181,19 +180,11 @@ header nav ul li a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  form select,
-  .item-double,
-  .item {
-    flex: 1;
-    margin: 10px;
-  }
   
   .group {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
   }
 
   .group .item {
@@ -207,6 +198,4 @@ header nav ul li a:hover {
     width: 50%;
     padding-right: 15px;
   }
-
-
-  }
+ }
